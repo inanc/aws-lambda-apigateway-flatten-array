@@ -1,7 +1,10 @@
-An AWS Lambda API Gateway Java application flattens nested arrays into a single array
+This example code is used for running a Java Lambda using API Gateway trigger.
+It uses AWS Lambda Core SDK for RequestStreamHandler implementation which is called by the trigger
 
 ### Description
-The service takes input as application/json:
+An AWS Lambda API Gateway Java application takes an arbitrary array of arrays with numbers and flattens it into a single array
+
+The AWS service via the API Gateway takes input as application/json:
 ```json
 {"input":[1,[2,3,[4]],[5],6,[7,[8]]]}
 ```
